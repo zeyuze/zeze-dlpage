@@ -1,0 +1,3 @@
+[submodule "src/yq"]
+	path = src/yq
+	url = https://github.com/kagurazakayashi/yq.git

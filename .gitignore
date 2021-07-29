@@ -2,3 +2,7 @@
 apk/*
 **/.font-spider/*
 *.psd
+index/qrcode.min.js
+node_modules
+index.html
+dist/*

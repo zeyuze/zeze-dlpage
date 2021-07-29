@@ -1,0 +1,51 @@
+{
+  "name": "zeze-dlpage",
+  "version": "1.0.0",
+  "description": "择与择下载页",
+  "main": "download.js",
+  "scripts": {
+    "release": "python3 src/yq/yqcss.py css/download.css src/download.css && gulp css && rm -f src/download.css && gulp html && mv dist/index.html ./index.html && webpack --mode=production --progress",
+    "debug": "python3 src/yq/yqcss.py css/download.css src/download.css && cp src/download.css dist/download.css && rm -f src/download.css && cp src/index.html ./index.html && webpack --mode=development --progress",
+    "html": "python3 src/yq/yqcss.py css/download.css src/download.css && cp src/download.css dist/download.css && rm -f src/download.css && cp src/index.html ./index.html",
+    "clean": "rm -f index.html dist/* src/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tongdysoft/mytongdy-largeScreenMode-frontend.git"
+  },
+  "keywords": [],
+  "author": "KagurazakaYashi & 0wew0",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/tongdysoft/mytongdy-largeScreenMode-frontend/issues"
+  },
+  "homepage": "https://github.com/tongdysoft/mytongdy-largeScreenMode-frontend#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.15",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "css-loader": "^5.2.1",
+    "eslint": "^7.24.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.1.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "typescript-eslint-parser": "^22.0.0",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-typescript": "^7.13.0",
+    "@types/echarts": "^4.9.7",
+    "core-js": "^2.6.12",
+    "echarts": "^5.0.2",
+    "echarts-gl": "^2.0.4",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "qrcode-generator": "^1.4.4"
+  }
+}

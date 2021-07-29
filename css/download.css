@@ -1,5 +1,5 @@
 body {
-  background: gray url("image/bg1080.jpg") no-repeat fixed top;
+  background: gray url("../image/bg1080.jpg") no-repeat fixed right;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -7,6 +7,7 @@ body {
   font-weight: lighter;
   min-width: 1024px;
   min-height: 768px;
+  overflow-x: hidden;
 }
 
 #titlebox {
@@ -57,9 +58,9 @@ body {
   color: #fff;
 }
 
-#qrcode img {
+#qrcode svg {
   width: 120px;
-  padding: 10px;
+  height: 120px;
   margin-right: 10px;
   background-color: #fff;
 }
