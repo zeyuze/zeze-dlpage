@@ -3,7 +3,7 @@ $ua = $_SERVER['HTTP_USER_AGENT'];
 $iua = strtolower($ua);
 $dl = "/";
 if (strpos($iua, 'android')) {
-    $dl = "../apk/zeze_beta_0.0.1+81.apk"; //android
+    $dl = "../apk/zeze_beta_0.0.1+82.apk"; //android
 } else if (strpos($iua, 'iphone') || strpos($iua, 'ipad') || strpos($iua, 'ipod')) {
     $dl = "https://testflight.apple.com/join/fnFWitYw"; //ios
 }
